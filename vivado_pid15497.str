@@ -1,0 +1,480 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 15497
+License: Customer
+
+Current time: 	Sun Dec 29 17:43:34 PST 2019
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Ubuntu
+OS Version: 4.18.0-20-generic
+OS Architecture: amd64
+Available processors (cores): 56
+
+Display: localhost:10.0
+Screen size: 1080x1920
+Screen resolution (DPI): 95
+Available screens: 2
+Available disk space: 1,263 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/opt/xilinx/SDx/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/opt/xilinx/SDx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	mengyuan
+User home directory: /home/mengyuan
+User working directory: /home/mengyuan/PPO/PPO.srcs/sources_1/new
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /opt/xilinx/SDx/Vivado
+HDI_APPROOT: /opt/xilinx/SDx/Vivado/2018.3
+RDI_DATADIR: /opt/xilinx/SDx/Vivado/2018.3/data
+RDI_BINDIR: /opt/xilinx/SDx/Vivado/2018.3/bin
+
+Vivado preferences file location: /home/mengyuan/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /home/mengyuan/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /home/mengyuan/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/opt/xilinx/SDx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/mengyuan/PPO/PPO.srcs/sources_1/new/vivado.log
+Vivado journal file location: 	/home/mengyuan/PPO/PPO.srcs/sources_1/new/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-15497-yangzi
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /opt/xilinx/SDx/Vivado/2018.3/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@yangzi
+XILINX_DSP: /opt/xilinx/SDx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: /opt/xilinx/SDx/Vivado/2018.3
+XILINX_SDK: /opt/xilinx/SDx/SDK/2018.3
+XILINX_SDX: /opt/xilinx/SDx/SDx/2018.3
+XILINX_VIVADO: /opt/xilinx/SDx/Vivado/2018.3
+XILINX_VIVADO_HLS: /opt/xilinx/SDx/Vivado/2018.3
+XILINX_XRT: /opt/xilinx/xrt
+
+
+GUI allocated memory:	178 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,054 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/mengyuan/PPO/PPO.xpr", 0); // q (Q, cp)
+// [GUI Memory]: 110 MB (+112849kb) [00:00:10]
+// [Engine Memory]: 1,081 MB (+982133kb) [00:00:10]
+// Opening Vivado Project: /home/mengyuan/PPO/PPO.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,107 MB. GUI used memory: 46 MB. Current time: 12/29/19, 5:43:36 PM PST
+// Tcl Message: open_project /home/mengyuan/PPO/PPO.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 147 MB (+33002kb) [00:00:20]
+// [Engine Memory]: 1,170 MB (+36825kb) [00:00:20]
+// [GUI Memory]: 154 MB (+16kb) [00:00:21]
+// WARNING: HEventQueue.dispatchEvent() is taking  3913 ms.
+// Tcl Message: open_project /home/mengyuan/PPO/PPO.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/xilinx/SDx/Vivado/2018.3/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1139 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:11 . Memory (MB): peak = 6625.379 ; gain = 48.809 ; free physical = 111037 ; free virtual = 118302 
+// Project name: PPO; location: /home/mengyuan/PPO; part: xcu200-fsgd2104-2-e
+// [Engine Memory]: 1,370 MB (+148057kb) [00:00:25]
+// Elapsed time: 15 seconds
+dismissDialog("Open Project"); // bx (cp)
+// [GUI Memory]: 174 MB (+12221kb) [00:00:27]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,421 MB. GUI used memory: 122 MB. Current time: 12/29/19, 5:43:56 PM PST
+// Elapsed time: 18 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design]", 15); // u (Q, cp)
+// [Engine Memory]: 1,487 MB (+50713kb) [00:00:44]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Utilization]", 24, false); // u (Q, cp)
+// bx (cp):  Open Synthesized Design : addNotify
+// Tcl Message: open_run synth_1 -name synth_1 
+// Tcl Message: Design is defaulting to impl run constrset: constrs_1 Design is defaulting to synth run part: xcu200-fsgd2104-2-e 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,540 MB. GUI used memory: 122 MB. Current time: 12/29/19, 5:44:16 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,835 MB. GUI used memory: 121 MB. Current time: 12/29/19, 5:44:31 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,675 MB. GUI used memory: 121 MB. Current time: 12/29/19, 5:44:51 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,973 MB. GUI used memory: 121 MB. Current time: 12/29/19, 5:45:11 PM PST
+// [Engine Memory]: 3,131 MB (+1645719kb) [00:01:55]
+// HMemoryUtils.trashcanNow. Engine heap size: 3,261 MB. GUI used memory: 121 MB. Current time: 12/29/19, 5:45:26 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,929 MB. GUI used memory: 122 MB. Current time: 12/29/19, 5:46:01 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 3,993 MB. GUI used memory: 121 MB. Current time: 12/29/19, 5:46:21 PM PST
+// [Engine Memory]: 4,052 MB (+802011kb) [00:03:21]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// HMemoryUtils.trashcanNow. Engine heap size: 4,163 MB. GUI used memory: 121 MB. Current time: 12/29/19, 5:47:11 PM PST
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 4,163 MB. GUI used memory: 121 MB. Current time: 12/29/19, 5:47:16 PM PST
+// [Engine Memory]: 4,280 MB (+26515kb) [00:03:54]
+// Xgd.load filename: /opt/xilinx/SDx/Vivado/2018.3/data/parts/xilinx/virtexuplus/devint/virtexuplus/xcu200/xcu200.xgd; ZipEntry: xcu200_floorplan.xgd elapsed time: 0.6s
+// [GUI Memory]: 293 MB (+116009kb) [00:03:58]
+// [Engine Memory]: 4,605 MB (+116416kb) [00:03:58]
+// Xgd.load filename: /opt/xilinx/SDx/Vivado/2018.3/data/parts/xilinx/virtexuplus/devint/virtexuplus/xcu200/xcu200.xgd; ZipEntry: xcu200_detail.xgd elapsed time: 3s
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 4,990 MB (+161875kb) [00:04:01]
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  3962 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.55 . Memory (MB): peak = 9365.629 ; gain = 0.000 ; free physical = 108356 ; free virtual = 115621 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 1865 instances were transformed.   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 544 instances   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 544 instances   IBUF => IBUF (IBUFCTRL, INBUF): 9 instances   RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 768 instances  
+// Tcl Message: open_run: Time (s): cpu = 00:03:50 ; elapsed = 00:03:15 . Memory (MB): peak = 9798.664 ; gain = 3082.539 ; free physical = 107771 ; free virtual = 115036 
+// ExpRunCommands.openSynthResults elapsed time: 197.2s
+// OpenDesignTask elapsed time: 197.2s
+// Device view-level: 0.0
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cp): Report Utilization: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 5,031 MB. GUI used memory: 221 MB. Current time: 12/29/19, 5:47:36 PM PST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 19.3s
+// Device view-level: 0.0
+// Elapsed time: 209 seconds
+setText(PAResourceQtoS.ReportUtilizationDialog_RESULTS_NAME, "utilization_1"); // Y (Q, a)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// 'cr' command handler elapsed time: 11 seconds
+// [Engine Memory]: 5,802 MB (+589634kb) [00:04:16]
+dismissDialog("Report Utilization"); // a (cp)
+// Tcl Message: report_utilization -name utilization_1 
+// bx (cp):  Report Utilization : addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 6,059 MB. GUI used memory: 222 MB. Current time: 12/29/19, 5:47:51 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 7,148 MB. GUI used memory: 222 MB. Current time: 12/29/19, 5:48:11 PM PST
+// [Engine Memory]: 7,335 MB (+1303663kb) [00:04:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 8,957 MB. GUI used memory: 222 MB. Current time: 12/29/19, 5:48:31 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 9,494 MB. GUI used memory: 222 MB. Current time: 12/29/19, 5:48:46 PM PST
+// RouteApi::initDelayMediator elapsed time: 78.3s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// [Engine Memory]: 9,706 MB (+2101358kb) [00:05:27]
+// [GUI Memory]: 308 MB (+524kb) [00:05:29]
+// [GUI Memory]: 324 MB (+537kb) [00:05:30]
+// [GUI Memory]: 341 MB (+629kb) [00:05:30]
+// [GUI Memory]: 358 MB (+73kb) [00:05:31]
+// [GUI Memory]: 376 MB (+89kb) [00:05:32]
+// [Engine Memory]: 10,393 MB (+211467kb) [00:05:32]
+// [GUI Memory]: 396 MB (+780kb) [00:05:33]
+// [GUI Memory]: 416 MB (+291kb) [00:05:33]
+// [Engine Memory]: 11,112 MB (+208713kb) [00:05:34]
+// [GUI Memory]: 437 MB (+32kb) [00:05:34]
+// [GUI Memory]: 459 MB (+242kb) [00:05:35]
+// HMemoryUtils.trashcanNow. Engine heap size: 10,105 MB. GUI used memory: 318 MB. Current time: 12/29/19, 5:49:02 PM PST
+// [GUI Memory]: 483 MB (+810kb) [00:05:42]
+// [Engine Memory]: 11,739 MB (+75345kb) [00:05:43]
+// [GUI Memory]: 507 MB (+421kb) [00:05:43]
+// [GUI Memory]: 533 MB (+518kb) [00:05:45]
+// [GUI Memory]: 560 MB (+302kb) [00:05:46]
+// [GUI Memory]: 588 MB (+220kb) [00:05:48]
+// [GUI Memory]: 618 MB (+419kb) [00:05:50]
+// WARNING: HEventQueue.dispatchEvent() is taking  1606 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 10,413 MB. GUI used memory: 407 MB. Current time: 12/29/19, 5:49:18 PM PST
+// [GUI Memory]: 650 MB (+908kb) [00:06:02]
+// [GUI Memory]: 683 MB (+623kb) [00:06:04]
+// [GUI Memory]: 718 MB (+331kb) [00:06:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 10,724 MB. GUI used memory: 497 MB. Current time: 12/29/19, 5:49:33 PM PST
+// [GUI Memory]: 753 MB (+41kb) [00:06:19]
+// [GUI Memory]: 791 MB (+24kb) [00:06:22]
+// [GUI Memory]: 832 MB (+983kb) [00:06:24]
+// [GUI Memory]: 874 MB (+290kb) [00:06:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 11,095 MB. GUI used memory: 605 MB. Current time: 12/29/19, 5:49:54 PM PST
+// [GUI Memory]: 917 MB (+187kb) [00:06:45]
+// [GUI Memory]: 964 MB (+403kb) [00:06:50]
+// [GUI Memory]: 1,012 MB (+324kb) [00:06:54]
+// [GUI Memory]: 1,064 MB (+700kb) [00:06:55]
+// [GUI Memory]: 1,117 MB (+339kb) [00:06:56]
+// [GUI Memory]: 1,174 MB (+588kb) [00:06:57]
+// [GUI Memory]: 1,233 MB (+901kb) [00:06:58]
+// [GUI Memory]: 1,296 MB (+937kb) [00:06:59]
+// [GUI Memory]: 1,361 MB (+575kb) [00:07:00]
+// [GUI Memory]: 1,430 MB (+641kb) [00:07:01]
+// [GUI Memory]: 1,502 MB (+468kb) [00:07:03]
+// [GUI Memory]: 1,577 MB (+700kb) [00:07:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 12,189 MB. GUI used memory: 1,043 MB. Current time: 12/29/19, 5:50:48 PM PST
+// Tcl Message: report_utilization: Time (s): cpu = 00:20:56 ; elapsed = 00:03:08 . Memory (MB): peak = 14617.008 ; gain = 3537.645 ; free physical = 101073 ; free virtual = 108338 
+// Elapsed time: 188 seconds
+dismissDialog("Report Utilization"); // bx (cp)
+// Device view-level: 0.0
+// Elapsed time: 59 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile]", 12, true); // l (Q, cp) - Node
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), Policysys : sysArray (SysArray.v)]", 2, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 12,219 MB. GUI used memory: 1,037 MB. Current time: 12/29/19, 5:52:07 PM PST
+selectCodeEditor("cu.v", 350, 165); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("cu.v", 455, 339); // cl (w, cp)
+// Elapsed time: 24 seconds
+selectCodeEditor("cu.v", 454, 253); // cl (w, cp)
+selectCodeEditor("cu.v", 393, 246); // cl (w, cp)
+// Elapsed time: 34 seconds
+selectCodeEditor("cu.v", 225, 86); // cl (w, cp)
+// Elapsed time: 48 seconds
+selectCodeEditor("cu.v", 473, 475); // cl (w, cp)
+// Elapsed time: 71 seconds
+selectCodeEditor("cu.v", 471, 374); // cl (w, cp)
+selectCodeEditor("cu.v", 467, 385); // cl (w, cp)
+selectCodeEditor("cu.v", 275, 401); // cl (w, cp)
+selectCodeEditor("cu.v", 469, 386); // cl (w, cp)
+selectCodeEditor("cu.v", 114, 98); // cl (w, cp)
+typeControlKey((HResource) null, "cu.v", 'c'); // cl (w, cp)
+selectCodeEditor("cu.v", 469, 382); // cl (w, cp)
+typeControlKey((HResource) null, "cu.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("cu.v", 484, 392); // cl (w, cp)
+// WARNING: HEventQueue.dispatchEvent() is taking  3972 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 12,252 MB. GUI used memory: 1,036 MB. Current time: 12/29/19, 5:55:52 PM PST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), zlbuffer : dlzldpram (dlzldpram.v)]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), zlbuffer : dlzldpram (dlzldpram.v)]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cu.v", 2); // k (j, cp)
+// Elapsed time: 45 seconds
+selectCodeEditor("cu.v", 203, 123); // cl (w, cp)
+// PAPropertyPanels.initPanels (deltalbuffer (dlzldpram)) elapsed time: 0.4s
+// Elapsed time: 21 seconds
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Block RAM Tile)", "deltalbuffer (dlzldpram) ; 7.5", 1, "7.5", 1, true); // L (Q, cp) - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Block RAM Tile)", "deltalbuffer (dlzldpram) ; 7.5", 1, "7.5", 1, true, false, false, false, true, false); // L (Q, cp) - Popup Trigger - Node
+selectTreeTable("PAResourceTtoZ.UtilizationInstTreeTablePanel_UTILIZATION_INST_TREE_TABLE(Block RAM Tile)", "deltalbuffer (dlzldpram) ; 7.5", 1, "deltalbuffer (dlzldpram)", 0, true); // L (Q, cp) - Node
+selectTab((HResource) null, (HResource) null, "Reports", 3); // aI (aF, cp)
+selectTab((HResource) null, (HResource) null, "Utilization", 5); // aI (aF, cp)
+// Elapsed time: 15 seconds
+expandTreeTable((HResource) null, "deltalbuffer (dlzldpram) ; 7.5", 1); // L (Q, cp)
+collapseTreeTable((HResource) null, "deltalbuffer (dlzldpram) ; 7.5", 1); // L (Q, cp)
+expandTreeTable((HResource) null, "zlbuffer (dlzldpram__xdcDup__1) ; 7.5", 2); // L (Q, cp)
+// Elapsed time: 49 seconds
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs, LUT as Memory, LUT as Distributed RAM]", 7, false); // l (Q, cp)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile]", 12, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile, RAMB18]", 13, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile, RAMB36/FIFO]", 15, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile, RAMB18]", 13, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile, RAMB36/FIFO]", 15, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile, RAMB18]", 13, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile, RAMB36/FIFO]", 15, true); // l (Q, cp) - Node
+selectCodeEditor("cu.v", 150, 374); // cl (w, cp)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs, LUT as Memory, LUT as Distributed RAM]", 7, false); // l (Q, cp)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs, LUT as Memory, LUT as Shift Register]", 6, false); // l (Q, cp)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs, LUT as Logic]", 8, false); // l (Q, cp)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs, LUT as Memory, LUT as Distributed RAM]", 7, false); // l (Q, cp)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB LUTs, LUT as Memory]", 5, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, CLB Logic, CLB Registers, Register as Flip Flop]", 10, false); // l (Q, cp)
+// Elapsed time: 13 seconds
+expandTreeTable((HResource) null, "deltalbuffer (dlzldpram) ; 512", 6); // L (Q, cp)
+collapseTreeTable((HResource) null, "deltalbuffer (dlzldpram) ; 512", 6); // L (Q, cp)
+expandTreeTable((HResource) null, "zlbuffer (dlzldpram__xdcDup__1) ; 224", 7); // L (Q, cp)
+collapseTreeTable((HResource) null, "zlbuffer (dlzldpram__xdcDup__1) ; 224", 7); // L (Q, cp)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile]", 12, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile, RAMB18]", 13, true); // l (Q, cp) - Node
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, BLOCKRAM, Block RAM Tile, RAMB36/FIFO]", 15, true); // l (Q, cp) - Node
+expandTreeTable((HResource) null, "zlbuffer (dlzldpram__xdcDup__1) ; 7", 2); // L (Q, cp)
+expandTreeTable((HResource) null, "deltalbuffer (dlzldpram) ; 7", 1); // L (Q, cp)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aI (aF, cp)
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aR, cp): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aR, cp): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-4442] BlackBox module \\nolabel_line322/singlesub[0].singlesub  has unconnected pin aclk. ]", 2, true); // ah (Q, cp) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-4442] BlackBox module \\nolabel_line322/singlesub[0].singlesub  has unconnected pin aclk. , [Synth 8-4442] BlackBox module \\nolabel_line322/singlesub[1].singlesub  has unconnected pin aclk. ]", 4, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-4442] BlackBox module \\nolabel_line322/singlesub[0].singlesub  has unconnected pin aclk. , [Synth 8-4442] BlackBox module \\nolabel_line322/singlesub[0].singlesub  has unconnected pin m_axis_result_tready. ]", 3, false); // ah (Q, cp)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Synth 8-4442] BlackBox module \\nolabel_line322/singlesub[0].singlesub  has unconnected pin aclk. , [Synth 8-4442] BlackBox module \\nolabel_line322/singlesub[0].singlesub  has unconnected pin m_axis_result_tready. ]", 3, false, false, false, false, false, true); // ah (Q, cp) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("cu.v", 107, 478); // cl (w, cp)
+selectCodeEditor("cu.v", 107, 478, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("cu.v", 110, 487); // cl (w, cp)
+selectCodeEditor("cu.v", 110, 487, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("cu.v", 114, 475); // cl (w, cp)
+selectCodeEditor("cu.v", 114, 475, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 24 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v)]", 1); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v)]", 1); // B (D, cp)
+// Elapsed time: 11 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), wu : wu (wu.v)]", 8); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), wu : wu (wu.v)]", 8); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), multarray : multArray (multArray.v)]", 7); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), multarray : multArray (multArray.v)]", 7); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), singlereluDervArray : reluDervArray (reluArray.v)]", 6); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), singlereluDervArray : reluDervArray (reluArray.v)]", 6); // B (D, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("cu.v", 188, 296); // cl (w, cp)
+selectCodeEditor("cu.v", 188, 296, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dlzldpram.v", 3); // k (j, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("dlzldpram.v", 326, 38); // cl (w, cp)
+selectCodeEditor("dlzldpram.v", 290, 199); // cl (w, cp)
+selectCodeEditor("dlzldpram.v", 314, 255); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("dlzldpram.v", 98, 36); // cl (w, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("dlzldpram.v", 200, 336); // cl (w, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("dlzldpram.v", 180, 291); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("dlzldpram.v", 341, 312); // cl (w, cp)
+selectCodeEditor("dlzldpram.v", 251, 293); // cl (w, cp)
+selectCodeEditor("dlzldpram.v", 342, 322); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectCodeEditor("dlzldpram.v", 324, 313); // cl (w, cp)
+selectCodeEditor("dlzldpram.v", 27, 310); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("dlzldpram.v", 181, 85); // cl (w, cp)
+typeControlKey((HResource) null, "dlzldpram.v", 'c'); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 12,274 MB. GUI used memory: 1,040 MB. Current time: 12/29/19, 6:04:18 PM PST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4154 ms. Increasing delay to 12462 ms.
+selectCodeEditor("dlzldpram.v", 201, 335); // cl (w, cp)
+selectCodeEditor("dlzldpram.v", 203, 336); // cl (w, cp)
+selectCodeEditor("dlzldpram.v", 203, 339); // cl (w, cp)
+typeControlKey((HResource) null, "dlzldpram.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4 ms. Decreasing delay to 2004 ms.
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), rowUroll[1].columnUroll[11].weightbuffer : bram (bram.v)]", 65, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), rowUroll[1].columnUroll[11].weightbuffer : bram (bram.v)]", 65, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), rowUroll[1].columnUroll[11].albuffer : dpram (dpram.v)]", 66, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, cus (cu.v), rowUroll[1].columnUroll[11].albuffer : dpram (dpram.v)]", 66, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bram.v", 4); // k (j, cp)
+selectCodeEditor("bram.v", 31, 384); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("bram.v", 181, 56); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 12,330 MB. GUI used memory: 1,039 MB. Current time: 12/29/19, 6:04:53 PM PST
+typeControlKey((HResource) null, "bram.v", 'c'); // cl (w, cp)
+selectCodeEditor("bram.v", 154, 199); // cl (w, cp)
+selectCodeEditor("bram.v", 201, 217); // cl (w, cp)
+typeControlKey((HResource) null, "bram.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dpram.v", 5); // k (j, cp)
+selectCodeEditor("dpram.v", 28, 580); // cl (w, cp)
+// [Engine Memory]: 12,341 MB (+16009kb) [00:21:40]
+selectCodeEditor("dpram.v", 180, 356); // cl (w, cp)
+typeControlKey((HResource) null, "dpram.v", 'c'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("dpram.v", 286, 377); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 12,350 MB. GUI used memory: 1,039 MB. Current time: 12/29/19, 6:05:17 PM PST
+selectCodeEditor("dpram.v", 203, 427); // cl (w, cp)
+selectCodeEditor("dpram.v", 203, 428); // cl (w, cp)
+selectCodeEditor("dpram.v", 202, 426); // cl (w, cp)
+typeControlKey((HResource) null, "dpram.v", 'v'); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 56 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Dec 29 18:05:41 2019] Launched synth_1... Run output will be captured here: /home/mengyuan/PPO/PPO.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 6 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "cu.v", 2); // k (j, cp)
+selectCodeEditor("cu.v", 270, 69); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "dlzldpram.v", 3); // k (j, cp)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// Elapsed time: 716 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Synthesis Completed"); // ah (cp)
+// Elapsed time: 501 seconds
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (cQ, cp)
+// bx (cp):  Reloading : addNotify
+// Tcl Message: refresh_design 
+// HMemoryUtils.trashcanNow. Engine heap size: 12,432 MB. GUI used memory: 977 MB. Current time: 12/29/19, 6:26:23 PM PST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_Sys_Acc/floating_point_Sys_Acc.dcp' for cell 'Policysys/rowUroll[0].columnUroll[0].singlePE/sysAcc' 
+// HMemoryUtils.trashcanNow. Engine heap size: 12,973 MB. GUI used memory: 977 MB. Current time: 12/29/19, 6:26:37 PM PST
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.dcp' for cell 'Policysys/rowUroll[0].columnUroll[0].singlePE/sysMul' 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.dcp' for cell 'nolabel_line322/singlesub[0].singlesub' 
+// Tcl Message: INFO: [Project 1-454] Reading design checkpoint '/home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.dcp' for cell 'singlereluArray/singlerelu[0].reluUnitinstance/compareUnit' 
+// TclEventType: DESIGN_REFRESH
+// [Engine Memory]: 13,474 MB (+540662kb) [00:43:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 11,977 MB. GUI used memory: 475 MB. Current time: 12/29/19, 6:26:55 PM PST
+// Engine heap size: 11,977 MB. GUI used memory: 476 MB. Current time: 12/29/19, 6:26:55 PM PST
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 10,939 MB. GUI used memory: 129 MB. Current time: 12/29/19, 6:30:25 PM PST
+// Xgd.load filename: /opt/xilinx/SDx/Vivado/2018.3/data/parts/xilinx/virtexuplus/devint/virtexuplus/xcu200/xcu200.xgd; ZipEntry: xcu200_detail.xgd elapsed time: 3.4s
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  16295 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 21593 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 13 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:05:27 ; elapsed = 00:04:30 . Memory (MB): peak = 16172.027 ; gain = 1314.637 ; free physical = 96139 ; free virtual = 103480 
+// Elapsed time: 272 seconds
+dismissDialog("Reloading"); // bx (cp)
+// RouteApi::initDelayMediator elapsed time: 6.2s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 23.2s
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Open Synthesized Design, Report Timing Summary]", 19, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_TIMING_SUMMARY
+// aJ (cp): Report Timing Summary: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aJ)
+dismissDialog("Report Timing Summary"); // aJ (cp)
+// bx (cp):  Report Timing Summary : addNotify
+// Tcl Message: report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 

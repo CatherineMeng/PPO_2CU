@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 27 14:57:01 2019
+# Process ID: 51262
+# Current directory: /home/mengyuan/PPO/PPO.srcs/sources_1/new
+# Command line: vivado
+# Log file: /home/mengyuan/PPO/PPO.srcs/sources_1/new/vivado.log
+# Journal file: /home/mengyuan/PPO/PPO.srcs/sources_1/new/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/mengyuan/PPO/PPO.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.Add_Sub_Value {Add}] [get_ips floating_point_Sys_Acc]
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_Sys_Acc/floating_point_Sys_Acc.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_Sys_Acc] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_Sys_Acc/floating_point_Sys_Acc.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_Sys_Acc/floating_point_Sys_Acc.xci]
+launch_runs -jobs 28 floating_point_Sys_Acc_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_Sys_Acc/floating_point_Sys_Acc.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name floating_point_sys_adder
+set_property -dict [list CONFIG.Component_Name {floating_point_sys_adder} CONFIG.Operation_Type {Multiply} CONFIG.Flow_Control {NonBlocking} CONFIG.A_Precision_Type {Single} CONFIG.C_A_Exponent_Width {8} CONFIG.C_A_Fraction_Width {24} CONFIG.Result_Precision_Type {Single} CONFIG.C_Result_Exponent_Width {8} CONFIG.C_Result_Fraction_Width {24} CONFIG.C_Mult_Usage {Full_Usage} CONFIG.Has_RESULT_TREADY {false} CONFIG.C_Latency {8} CONFIG.C_Rate {1}] [get_ips floating_point_sys_adder]
+generate_target {instantiation_template} [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci]
+update_compile_order -fileset sources_1
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_sys_adder] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci]
+launch_runs -jobs 28 floating_point_sys_adder_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Has_A_TLAST {true} CONFIG.Has_B_TLAST {true} CONFIG.RESULT_TLAST_Behv {Pass_A_TLAST}] [get_ips floating_point_sys_adder]
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_sys_adder] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci] -no_script -sync -force -quiet
+reset_run floating_point_sys_adder_synth_1
+launch_runs -jobs 28 floating_point_sys_adder_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Has_B_TLAST {false} CONFIG.RESULT_TLAST_Behv {Pass_A_TLAST}] [get_ips floating_point_sys_adder]
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_sys_adder] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci] -no_script -sync -force -quiet
+reset_run floating_point_sys_adder_synth_1
+launch_runs -jobs 28 floating_point_sys_adder_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sys_adder/floating_point_sys_adder.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name floating_point_0
+set_property -dict [list CONFIG.Operation_Type {Compare} CONFIG.Flow_Control {NonBlocking} CONFIG.A_Precision_Type {Single} CONFIG.C_A_Exponent_Width {8} CONFIG.C_A_Fraction_Width {24} CONFIG.Result_Precision_Type {Custom} CONFIG.C_Result_Exponent_Width {1} CONFIG.C_Result_Fraction_Width {0} CONFIG.C_Mult_Usage {No_Usage} CONFIG.Has_RESULT_TREADY {false} CONFIG.C_Latency {2} CONFIG.C_Rate {1}] [get_ips floating_point_0]
+generate_target {instantiation_template} [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci]
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_0] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci]
+launch_runs -jobs 28 floating_point_0_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.C_Compare_Operation {Greater_Than} CONFIG.C_Result_Exponent_Width {1}] [get_ips floating_point_0]
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_0] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci] -no_script -sync -force -quiet
+reset_run floating_point_0_synth_1
+launch_runs -jobs 28 floating_point_0_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+create_ip -name floating_point -vendor xilinx.com -library ip -version 7.1 -module_name floating_point_sub
+set_property -dict [list CONFIG.Component_Name {floating_point_sub} CONFIG.Add_Sub_Value {Subtract} CONFIG.Flow_Control {NonBlocking} CONFIG.Has_RESULT_TREADY {false} CONFIG.C_Latency {11}] [get_ips floating_point_sub]
+generate_target {instantiation_template} [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.xci]
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_sub] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.xci]
+launch_runs -jobs 28 floating_point_sub_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Flow_Control {Blocking} CONFIG.Has_RESULT_TREADY {true} CONFIG.C_Latency {3}] [get_ips floating_point_0]
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_0] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci] -no_script -sync -force -quiet
+reset_run floating_point_0_synth_1
+launch_runs -jobs 28 floating_point_0_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_0_1/floating_point_0.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Flow_Control {Blocking} CONFIG.Has_RESULT_TREADY {true} CONFIG.C_Latency {12}] [get_ips floating_point_sub]
+generate_target all [get_files  /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.xci]
+catch { config_ip_cache -export [get_ips -all floating_point_sub] }
+export_ip_user_files -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.xci] -no_script -sync -force -quiet
+reset_run floating_point_sub_synth_1
+launch_runs -jobs 28 floating_point_sub_synth_1
+export_simulation -of_objects [get_files /home/mengyuan/PPO/PPO.srcs/sources_1/ip/floating_point_sub/floating_point_sub.xci] -directory /home/mengyuan/PPO/PPO.ip_user_files/sim_scripts -ip_user_files_dir /home/mengyuan/PPO/PPO.ip_user_files -ipstatic_source_dir /home/mengyuan/PPO/PPO.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/mengyuan/PPO/PPO.cache/compile_simlib/modelsim} {questa=/home/mengyuan/PPO/PPO.cache/compile_simlib/questa} {ies=/home/mengyuan/PPO/PPO.cache/compile_simlib/ies} {xcelium=/home/mengyuan/PPO/PPO.cache/compile_simlib/xcelium} {vcs=/home/mengyuan/PPO/PPO.cache/compile_simlib/vcs} {riviera=/home/mengyuan/PPO/PPO.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
