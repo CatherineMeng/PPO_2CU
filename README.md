@@ -1,9 +1,7 @@
 # PPO_2CU
 > This is the implementation of FPGA-based Proximal Policy Optimization acceleration.
 
-![](overview.png | width=200)
-
-<img src="https://github.com/favicon.ico" width="100">
+<img src="https://github.com/CatherineMeng/PPO_2CU/blob/master/overview.png" width="300">
 
 ## Platform Requirement
 
